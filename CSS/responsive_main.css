@@ -1,0 +1,81 @@
+                        /*GENERAL FORMAT*/
+                        
+                        body {
+                            padding: 0;
+                            margin: 0;
+                            box-sizing: border-box;
+                            font-family: 'Abril Fatface', Times, 'Times New Roman', serif;
+                            line-height: 2;
+                            background: linear-gradient(to right, rgba(117, 83, 153, 0), rgba(117, 83, 153, 1));
+                        }
+                        /*FIXED HEADER*/
+                        
+                        .cesar {
+                            color: darkblue;
+                            text-align: center;
+                            position: fixed;
+                            height: 6rem;
+                            z-index: 100;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: cornsilk;
+                        }
+                        /*FIXED FOOTER*/
+                        
+                        .abajo {
+                            position: absolute;
+                            bottom: 0;
+                            z-index: 100;
+                            text-align: center;
+                            background-color: beige;
+                            height: 5rem;
+                            width: 100%;
+                        }
+                        /*LIST*/
+                        
+                        ul {
+                            list-style: none;
+                            padding-top: 100px;
+                        }
+                        /*LIST ELEMENTS. MOBILE-FIRST, SMALLEST SCREEN DEVICE*/
+                        
+                        li {
+                            margin-top: 2.5%;
+                            float: left;
+                            width: 100%;
+                        }
+                        /*IMAGE. SHOULD TAKE NO MORE THAN 90% OF THE OVERALL WIDTH*/
+                        
+                        img {
+                            width: 90%;
+                            box-shadow: 10px 10px 5px grey;
+                            transition: transform 2.5s ease-in-out;
+                        }
+                        
+                        img:hover {
+                            filter: invert(100%);
+                            transform: scale(-1)rotate(0.5turn);
+                        }
+                        /*MEDIA QUERIES*/
+                        
+                        @media screen and (min-width:600px) {
+                            /* FOR TWO COLUMNS*/
+                            li {
+                                width: 50%;
+                            }
+                            img:hover {
+                                filter: invert(100%);
+                                transform: scale(-1)rotate(0.5turn);
+                            }
+                        }
+                        
+                        @media screen and (min-width:1200px) {
+                            /* FOR FOUR COLUMNS*/
+                            li {
+                                width: 25%;
+                            }
+                            img:hover {
+                                filter: invert(100%);
+                                transform: scale(-1)rotate(0.5turn);
+                            }
